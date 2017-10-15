@@ -1,0 +1,47 @@
+  body {
+      margin: 0;
+      font-family: 'Karla', sans-serif;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      min-width: 100vw;
+      min-height: 100vh;
+  }
+  
+/*kolory do gradientu #fcfc50 i #f237ad*/
+
+  header {
+      background: #fff;
+      position: relative;
+      border: 20px solid #fff;
+      
+      width: 80vw;
+      height: 90vh;
+      background: linear-gradient(#fcfc50, #f237ad);
+      display: flex;
+  }
+  
+  header img {
+      width: 50vw;
+      align-items: flex-start;
+      height: 70%;
+      mix-blend-mode: color-burn;
+  }
+  
+  header h1 {
+      position: absolute;
+      z-index: 1;
+      bottom: 20px;
+      width: 100%;
+      color: #fff;
+      font-size: 150px;
+      text-align: center;
+  }
+  
+  p {
+      position: absolute;
+      bottom: 0;
+      width: calc(100% - 200px);
+      margin: 30px 100px;
+      color: #fff;
+  }
