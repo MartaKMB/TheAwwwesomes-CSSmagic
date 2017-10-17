@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  background: #ececec;
+  font-weight: 500;
+  color: #5c1d92;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.click-here {
+  font-size: 52px;
+  font-family: inherit;
+  font-weight: 600;
+  color: #bd70fe;
+  text-transform: lowercase;
+  background-color: white;
+  border: 0;
+  padding: 0;
+  width: 425px;
+  height: 425px;
+  border-radius: 50%;
+  box-shadow: 0 0 100px rgba(0, 0, 0, .25);
+  cursor: pointer;
+    
+/*    transform: rotate(60deg);*/
+    
+    transition: .6s ease-in-out;
+    transition-property: color, background-color;
+    
+    animation-name: pulsation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.click-here:hover {
+    background-color: #bd70fe;
+    color: white;
+}
+
+@keyframes pulsation {
+    0% {
+        transform: scale(.9) rotate(10deg);
+    }
+    
+    100% {
+        transform: scale(1.1) rotate(10deg);
+    }
+}
