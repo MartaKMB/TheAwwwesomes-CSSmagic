@@ -1,0 +1,50 @@
+.css-cosmetics {
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+}
+
+.nail_move {
+    animation-name: nailMove;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.lipstic_move {
+    animation-name: lipsticInOut;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes nailMove {
+    0% {
+        transform: translateX(-40px);
+    }
+    25% {
+        transform: translateX(10px);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+    75% {
+        transform: translateX(0px);
+       
+    }
+    100% {
+        transform: translateX(5px);
+       
+    }
+}
+
+@keyframes lipsticInOut {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-18px);
+    }
+}

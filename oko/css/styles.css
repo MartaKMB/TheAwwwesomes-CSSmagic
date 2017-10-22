@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, #FF9EAE, #9d2eed);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  color: #fff;
+  margin: 40px;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.eye {
+  width: 245px;
+}
+
+.eye_movement {
+    animation-name: eyeMove;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes eyeMove{
+    0% {
+        transform: translateX(-30px);
+    }
+    25% {
+        transform: translateX(10px);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+    75% {
+        transform: translateX(0px);
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateX(1px);
+        transform: translateY(7px);
+        transform: scale(1.1);
+    }
+}
